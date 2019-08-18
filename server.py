@@ -1,9 +1,9 @@
 import zmq
 
 context = zmq.Context()
-s = context.socket(zmq.REP)
+socket = context.socket(zmq.REP)
 
-s.bind("tcp://*:5555")
+socket.bind("tcp://*:5555")
 
 def store(message, filename):
     with open(filename, "wb") as f:
