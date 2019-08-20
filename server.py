@@ -6,7 +6,7 @@ socket = context.socket(zmq.REP)
 socket.bind("tcp://*:5555")
 
 def store(message, filename):
-    with open(filename, "wb") as f:
+    with open(filename, "ab") as f:
         f.write(message)
 
 

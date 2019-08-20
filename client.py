@@ -1,19 +1,26 @@
 import zmq 
 
 
-ctx = zmq.Context()
-s = ctx.socket(zmq.REQ)
-s.connect("tcp://192.168.0.11   :5555")
+context = zmq.Context()
+s = context.socket(zmq.REQ)
+s.connect("tcp://localhost:5555")
 
+tam = 1024*1024*10
 
-filename = "amapolas2.jpg"
+filename = "myfile.txt"
 
 
 with open (filename, "rb") as f:
-    contents = f.read()
-    s.send_multipart([filename.encode("utf-8"), contents])
-m = s.recv_string()
+    while True:
+        contents = f.read(tam)
+        if not contents:
+            break
+        else:
+            s.send_multipart([sha256.decode(), contents])
+            #f.seek(tam)
+            m = s.recv()
 
+print (m)
 #sha1sum file.format
 #head -c 250M </dev/urandom > myfile.txt
-#ifconfig
+#ifconfig192.168.0.15
