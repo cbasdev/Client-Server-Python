@@ -11,8 +11,8 @@ def store(message, filename):
 
 
 while True:
-    name, m = socket.recv_multipart()
-    store(m, "f-" + str(name.decode("utf-8")))
+    sha256, m = socket.recv_multipart()
+    store(m, sha256.decode())
     socket.send_string("Mensaje enviado")
 
 print ("Esto no debería aparecer")
