@@ -1,0 +1,20 @@
+Hola mundo 3:
+
+Librería SFML Para música
+
+1- Listar Canciones:
+
+el cliente solo tiene conexion con el proxy o broker
+
+2- Reproducir la canción
+
+
+correr en puertos diferentes
+
+diferentes variables 
+
+
+pygame tiene un buffer para almacenar archivos
+
+
+
