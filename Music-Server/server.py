@@ -2,7 +2,7 @@ import zmq
 
 context = zmq.Context()
 socket = context.socket(zmq.REP)
-socket.bind("tcp:(//*:5556")
+socket.bind("tcp://*:5556")
 
 
 def buscarSong(nameSong, artista):
@@ -11,6 +11,6 @@ def buscarSong(nameSong, artista):
 while True:
     nameSong, artista = socket.recv_multipart()
     buscarSong(nameSong, artista)
-    socket.send_string("Mensaje enviado")
+    socket.send_string("Buscando")
 
 print ("Esto no debería aparecer")

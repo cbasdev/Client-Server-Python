@@ -19,3 +19,5 @@ print (m)
 #sha1sum file.format
 #head -c 250M </dev/urandom > myfile.txt
 #ifconfig192.168.0.15
+
+'''
