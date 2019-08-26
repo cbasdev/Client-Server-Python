@@ -6,6 +6,8 @@ El contenido de este repositorio contiene los trabajos realizados a lo largo de 
 
 [Sebastian Velez Montoya](https://github.com/sebasttianvelez)
 
+Version de python: 3 or more.
+
 ```bash
 git clone https://github.com/SebasttianVelez/Client-Server-Python
 ```

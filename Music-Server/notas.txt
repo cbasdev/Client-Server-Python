@@ -18,3 +18,9 @@ pygame tiene un buffer para almacenar archivos
 
 
 
+buscar el item en json con artista y song (doble busqueda)
+
+apuntes screen:
+cvt 1600 900
+xrandr --newmode "1600x900_60.00"  118.25  1600 1696 1856 2112  900 903 908 934 -hsync +vsync
+xrandr --addmode DP-1 1600x900_60.00
