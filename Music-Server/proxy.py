@@ -12,6 +12,11 @@ catalogo = {
     "Muse":"tcp://localhost:5557",
 }
 
+dictionar = {
+    "onemoresong":[
+        "p1", "p2", "p3"
+    ]
+}
 def buscarServer(artista):
     return catalogo[artista]
 
