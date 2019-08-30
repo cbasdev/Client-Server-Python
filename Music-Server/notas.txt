@@ -16,6 +16,10 @@ diferentes variables
 
 pygame tiene un buffer para almacenar archivos
 
+Información que debe tener el proxy:
+
+1- Que archivos tiene cada servidor.
+2- Para cada archivo, cuales son sus partes
 
 
 buscar el item en json con artista y song (doble busqueda)
